@@ -32,6 +32,6 @@ Qlat = namedtuple("Qlat", ("xs", "ys"))
 
 
 def vise_to_qlat(mesh, vise):
-    xs = np.vectorize(lambda i: mesh.xs[i])(vise)
-    ys = np.vectorize(lambda i: mesh.ys[i])(vise)
+    xs = mesh.xs.take(vise)
+    ys = mesh.ys.take(vise)
     return Qlat(xs, ys)
