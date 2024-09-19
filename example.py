@@ -1,5 +1,5 @@
 from scipy.sparse import lil_matrix
-import melampyfem as fem
+import fifemagpie as fem
 
 ndiv = 10
 Th = fem.mesh2d.make_square_mesh(ndiv, ndiv)
