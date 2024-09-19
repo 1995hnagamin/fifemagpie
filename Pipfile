@@ -8,6 +8,7 @@ numpy = "~=2.1"
 scipy = "~=1.14"
 
 [dev-packages]
+ruff = "~=0.6"
 
 [requires]
 python_version = "3.12"
